@@ -1,16 +1,20 @@
-# Contributing to Web Design Practice Project
+# Contributing Guidelines
 
-Thank you for your interest in contributing to this project! 🎉  
-This repository is aimed at strengthening core **HTML and CSS** concepts through hands-on practice.
+Thanks for considering contributing to **KWatch**!
 
----
+## How to Contribute
 
-## 🛠 How to Contribute
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes
+4. Commit: `git commit -m "Add some feature"`
+5. Push to your fork: `git push origin feature-name`
+6. Open a Pull Request on the main repo
 
-1. **Fork the repository**
-   - Click the **Fork** button in the top-right corner of the repo page.
+## Code Style
 
-2. **Clone your forked repo**
-   ```bash
-   git clone https://github.com/your-username/web-design-practice.git
-   cd web-design-practice
+- Use clean and consistent formatting
+- Comment complex code
+- Avoid committing unused files
+
+Happy coding!
