@@ -1,0 +1,540 @@
+/* Set background properties for the entire page */
+body {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgb(204, 235, 235);
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    background: rgb(7, 90, 62);
+    z-index: 1000;
+    top: 0;
+}
+
+/* Logo container styling */
+.navimg img {
+    margin-top: 36px;
+    width: 120px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+/* Navigation links container */
+.navlinks {
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+/* Individual navigation link */
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Hover effect for navigation links */
+.navlinks a:hover {
+    border: 2px solid white;
+    font-size: 1.15rem;
+}
+
+/* Search bar and related UI in nav */
+.navsearch {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 38px;
+
+    input {
+        height: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .button {
+        background-color: rgb(21, 102, 75);
+        font-weight: bold;
+        color: white;
+        font-size: 1.0rem;
+        height: 25px;
+    }
+}
+
+/* Hero section (top banner/intro) */
+.Hero {
+    color: rgb(9, 95, 66);
+    text-align: center;
+    padding-top: 52px;
+
+    .heroimg {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        background-color: azure;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Smooth scrolling offset to avoid content hidden behind fixed nav */
+#Collections::before,
+#About::before,
+#Contact::before,
+#StoreLoc:before {
+    content: '';
+    display: block;
+    height: 65px;
+    margin-top: -65px;
+    visibility: hidden;
+}
+
+/* Dropdown container styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    /* Link styling inside dropdown */
+    a {
+        color: azure;
+    }
+}
+
+/* Collections section styles */
+#Collections {
+    color: rgb(9, 95, 66);
+    text-align: center;
+    font-size: 0.9rem;
+
+    #luxury,
+    #men {
+        background-color: azure;
+        border-radius: 3px;
+        border: 1px solid azure;
+        padding-bottom: 30px;
+        color: rgb(56, 150, 122);
+    }
+
+    #women {
+        padding-bottom: 30px;
+        color: rgb(56, 150, 122);
+    }
+
+    /* Layouts for product sections */
+    #menP,
+    #womenP,
+    #luxuryP {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Image border and hover effects */
+#i1,
+#i2,
+#i3,
+#i4 {
+    transition: width 2s;
+    border: 4px solid rgb(5, 226, 160);
+    border-radius: 5px;
+}
+
+#i1 img:hover,
+#i2 img:hover,
+#i3 img:hover,
+#i4 img:hover {
+    opacity: 30%;
+    width: 290px;
+    height: 290px;
+}
+
+/* Contact section styling */
+.consection .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: rgb(9, 95, 66);
+}
+
+.consection .Contactdiv {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 50px 100px;
+    background-color: azure;
+}
+
+.consection .Contactdiv .conImg {
+    height: fit-content;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    margin-right: 35px;
+}
+
+.consection .Contactdiv .cBox {
+    height: fit-content;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(56, 150, 122);
+    border-radius: 2.5%;
+    padding: 30px 20px;
+    font-size: large;
+    background-color: rgb(212, 238, 238);
+    color: rgb(56, 150, 122);
+}
+
+.consection .Contactdiv .cBox label {
+    padding-right: 20px;
+}
+
+.consection .Contactdiv .cBox div {
+    padding-top: 8px;
+}
+
+/* Gender field specifically styled */
+.consection .Contactdiv .cBox .gender {
+    padding-right: 0px;
+    font-size: smaller;
+    color: rgb(56, 150, 122);
+}
+
+/* Buttons in contact form */
+.consection button {
+    background-color: rgb(56, 150, 122);
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+/* Text inputs */
+.consection input {
+    background-color: aliceblue;
+    color: rgb(10, 117, 204);
+    font-size: 1rem;
+    padding: 2px;
+}
+
+/* Textarea styling */
+.consection textarea {
+    background-color: aliceblue;
+    color: rgb(10, 117, 204);
+    padding: 2px;
+    margin-top: 5px;
+    width: 290px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+/* Store location section */
+#StoreLoc {
+    color: rgb(9, 95, 66);
+    text-align: center;
+    font-size: 1.1rem;
+
+    iframe {
+        border-radius: 2.5%;
+        width: 96%;
+        border: 2px solid rgb(4, 90, 4);
+    }
+}
+
+/* About section styling */
+#About {
+    color: rgb(9, 95, 66);
+
+    h1 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .wabout {
+        padding-top: 5px;
+        background-color: azure;
+        border-radius: 3px;
+        border: 1px solid azure;
+        padding-bottom: 5px;
+        display: block;
+
+        .abcombine {
+            display: flex;
+            color: rgb(56, 150, 122);
+
+            .abimg {
+                float: left;
+                padding-left: 40px;
+                padding-top: 13px;
+            }
+
+            .abpara {
+                float: right;
+                padding-left: 40px;
+                padding-right: 70px;
+                font-size: 1.3rem;
+            }
+        }
+
+        iframe {
+            padding: 50px 90px;
+            width: 88%;
+            height: 450px;
+            border-radius: 0.8%;
+        }
+    }
+}
+
+/* Footer section */
+.foter {
+    background: rgb(7, 90, 62);
+    color: aliceblue;
+    font-size: 1.2rem;
+
+    .foot {
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    padding-bottom: 5px;
+
+    a {
+        text-decoration: none;
+        color: rgb(191, 241, 241);
+    }
+
+    .last {
+        text-align: center;
+        padding-bottom: 7px;
+    }
+
+    .her {
+        padding: 0px;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: 40px;
+        padding: 0 2px;
+    }
+
+    .navbar .navimg img {
+        width: 70px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0;
+        float: none;
+        margin-top: 27px;
+    }
+
+    .navbar .navlinks {
+        margin-left: 0px;
+        gap: 1px;
+        padding: 1px 5px;
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .navbar .navlinks a {
+        font-size: 0.7rem;
+        padding: 2px;
+        text-align: end;
+        padding-right: 3px;
+    }
+
+    .navbar .navlinks a:hover {
+        border: 1px solid white;
+    }
+
+    .navbar .navsearch label,
+    .navbar .navsearch input,
+    .navbar .navsearch .button {
+        display: none;
+    }
+
+    .navbar .navsearch .icon {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.5rem;
+    }
+
+    .Hero {
+        padding-top: 40px;
+        font-size: 0.9rem;
+    }
+
+    .heroimg {
+        display: block;
+        padding: 0px;
+    }
+
+    .heroimg img {
+        display: block;
+        width: 90%;
+        height: 200px;
+        padding: 0px;
+    }
+
+    /* Show only 1 product image on mobile */
+    #Collections #i2,
+    #Collections #i3,
+    #Collections #i4 {
+        display: none;
+    }
+
+    #i1 {
+        display: block;
+        justify-content: center;
+        width: 70%;
+        border: 2px solid rgb(5, 226, 160);
+    }
+
+    #i1 img {
+        display: block;
+        width: 100%;
+    }
+
+    #i1 img:hover {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #i1:hover {
+        width: 105%;
+        height: fit-content;
+    }
+
+    /* Dropdown menu styling on hover */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 3px 5px;
+        z-index: 999;
+    }
+
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 6px 0;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .consection .section-title {
+        font-size: 1.9rem;
+    }
+
+    .consection .Contactdiv {
+        display: inline-block;
+        width: 95%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .consection .Contactdiv .conImg {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .consection .Contactdiv .cBox {
+        width: 90%;
+        display: block;
+        border-width: 1px;
+        border-radius: 2%;
+        margin-left: 10px;
+    }
+
+    .consection .Contactdiv .cBox.textarea {
+        width: 85px;
+    }
+
+    /* Stack about section vertically */
+    #About .wabout .abcombine {
+        display: block;
+    }
+
+    #About .wabout .abcombine .abimg {
+        display: block;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        padding-left: 5px;
+    }
+
+    #About .wabout .abcombine .abimg img {
+        width: 100%;
+        height: fit-content;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+
+    #About .wabout .abcombine .abpara {
+        display: block;
+        width: 92%;
+        font-size: 1.1rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+
+    #About .wabout iframe {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .foter {
+        font-size: 1.0rem;
+    }
+
+    .foter .foot {
+        padding: 15px;
+    }
+
+    .last {
+        font-size: 0.8rem;
+    }
+}

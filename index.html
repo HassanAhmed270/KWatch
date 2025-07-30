@@ -1,0 +1,240 @@
+<!DOCTYPE html> <!-- Document type declaration for HTML5 -->
+<html>
+
+<head>
+    <!-- Meta tags for character encoding and responsive layout -->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="conatiner">
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="navimg">
+                <img src="img/KWlogo.png"> <!-- Logo -->
+            </div>
+
+            <div class="navlinks">
+                <!-- Navigation links -->
+                <a href="#Home">Home</a>
+                <a href="#Collections">Collections</a>
+                <a href="#About">About Us</a>
+                <a href="#Contact">Contact</a>
+                <a href="#StoreLoc">Location</a>
+            </div>
+
+            <!-- Search bar section -->
+            <div class="navsearch">
+                <label>Section:</label>
+                <label class="icon">🔍</label>
+                <input type="text" placeholder="Search about us">
+                <input type="submit" value="Go!" class="button">
+            </div>
+        </div>
+
+        <!-- Home Section -->
+        <div id="Home">
+            <div class="Hero">
+                <h1>WELCOME TO K-WATCHES</h1>
+                <div class="heroimg">
+                    <img src="img/Premium.png" width="1200" alt="Watch 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Collections Section -->
+        <div id="Collections">
+            <h1>COLLECTIONS</h1>
+
+            <!-- Men's Collection -->
+            <div id="men">
+                <u><h2>Mens Collection</h2></u>
+                <div id="menP">
+                    <div id="i1" class="dropdown">
+                        <img src="img/watch1.png" width="280" alt="Watch 1">
+                        <div class="dropdown-content">
+                            <a href="#">Explore More</a>
+                        </div>
+                    </div>
+                    <div id="i2">
+                        <img src="img/watch2.png" width="280" alt="Watch 2">
+                    </div>
+                    <div id="i3">
+                        <img src="img/watch3.png" width="280" alt="Watch 3">
+                    </div>
+                    <div id="i4">
+                        <img src="img/watch4.png" width="280" alt="Watch 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women's Collection -->
+            <div id="women">
+                <u><h2>Womens Collection</h2></u>
+                <div id="womenP">
+                    <div id="i1" class="dropdown">
+                        <img src="img/women1.png" width="280" alt="Watch 1">
+                        <div class="dropdown-content">
+                            <a href="#">Explore More</a>
+                        </div>
+                    </div>
+                    <div id="i2">
+                        <img src="img/women2.png" width="280" alt="Watch 2">
+                    </div>
+                    <div id="i3">
+                        <img src="img/women3.jpg" width="280" alt="Watch 3">
+                    </div>
+                    <div id="i4">
+                        <img src="img/women4.png" width="280" alt="Watch 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Collection -->
+            <div id="luxury">
+                <u><h2>Luxury Collection</h2></u>
+                <div id="luxuryP">
+                    <div id="i1" class="dropdown">
+                        <img src="img/luxury1.png" width="280" alt="Watch 1">
+                        <div class="dropdown-content">
+                            <a href="#">Explore More</a>
+                        </div>
+                    </div>
+                    <div id="i2">
+                        <img src="img/luxury2.png" width="280" alt="Watch 2">
+                    </div>
+                    <div id="i3">
+                        <img src="img/luxury3.png" width="280" alt="Watch 3">
+                    </div>
+                    <div id="i4">
+                        <img src="img/luxury4.png" width="280" alt="Watch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div id="About">
+            <section>
+                <h1>ABOUT US</h1>
+                <div class="wabout">
+                    <div class="abcombine">
+                        <div class="abimg">
+                            <img src="img/Kwatches.jpg" width="500px" height="355px">
+                        </div>
+                        <div class="abpara">
+                            <p>At <strong>K-Watches</strong>, we believe that time is more than just a number — it's a
+                                reflection of your identity, precision, and style.
+                                Founded with a passion for craftsmanship and a commitment to quality,
+                                <strong>K-Watches</strong> blends timeless design with modern innovation.
+                            </p>
+                            <p>Each timepiece in our collection is thoughtfully curated,
+                                representing elegance, reliability, and attention to detail.
+                                Whether you're dressing for a business meeting,a casual evening, or a special event,
+                                <strong>K-Watches</strong> is designed to complementevery moment of your life.
+                            </p>
+                            <p>We don’t just sell watches — we deliver statements of sophistication.Join us on a journey
+                                where <strong>luxury meets legacy</strong>, and time becomes your finest accessory.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Embedded video -->
+                    <div class="video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/HXHphpDJ9T0?si=_DPuCL-ReFLIX93V"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="Contact">
+            <div class="consection">
+                <h1 class="section-title">CONTACT US</h1>
+                <div class="Contactdiv">
+                    <div class="conImg">
+                        <img src="img/chat.png" width="400px" height="400px">
+                    </div>
+                    <div class="cBox">
+                        <!-- Contact Form -->
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="668fa31c-6d7c-49ed-a2dc-9ec6f12d7b2a">
+
+                            <div>
+                                <label>Name:</label>
+                                <input type="text" name="name" placeholder="Enter Name" required>
+                            </div>
+
+                            <div>
+                                <label>Email:</label>
+                                <input type="text" name="email" placeholder="Enter Email" required>
+                            </div>
+
+                            <div>
+                                <label>Gender</label><br>
+                                <label class="gender">Male</label>
+                                <input type="radio" name="gender" value="Male" required>
+                                <label class="gender">Female</label>
+                                <input type="radio" name="gender" value="Female">
+                            </div>
+
+                            <div>
+                                <label>Message:</label><br>
+                                <textarea name="message" placeholder="Enter Message" rows="10" required></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+    <!-- Store Location Section -->
+    <div id="StoreLoc">
+        <section>
+            <h1>STORE LOCATION</h1>
+            <div class="map">
+                <!-- Embedded Google Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7240.267763531208!2d67.08410500000002!3d24.85927660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1753465297229!5m2!1sen!2s"
+                    width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    </div>
+
+</body>
+
+<!-- Footer Section -->
+<footer>
+    <div class="foter">
+        <div class="foot">
+            Email:<a href="mailto:hassaanuser@gmail.com" target="_blank"> hassaanuser@gmail.com</a>
+            <br> Whatsapp:<a href="https://wa.me/923323924090" target="_blank"> 03323924190</a>
+            <br> <br>
+            Page Links
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+            </ul>
+        </div>
+        <hr color="white" class="her">
+        <div class="last">@2025 All Righs reserved and Protected by Hassan</div>
+    </div>
+</footer>
+
+</html>
